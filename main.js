@@ -10,27 +10,27 @@ function myFunction() {
     for(var i=0;i<pass.length;i++){
 
         if(pass[i].length<6||pass[i].length>12){
-            message.push("Failure Password must be at least 6 characters long.");
+            message.push("Failure Password must be at least 6 characters long .");
             continue;
         }
         if(pass[i].search(/[0-9]/)===-1){
-            message.push("Failure Password must contain at least one letter from 0-9.");
+            message.push("Failure Password must contain at least one letter from 0-9 .");
             continue;
         }
         if(pass[i].search(/[a-z]/)===-1){
-            message.push("Failure Password must contain at least one letter from a-z.");
+            message.push("Failure Password must contain at least one letter from a-z .");
             continue;
         }
         if(pass[i].search(/[A-Z]/)===-1){
-            message.push("Failure Password must contain at least one letter from A-Z.");
+            message.push("Failure Password must contain at least one letter from A-Z .");
             continue;
         }
         if(pass[i].search(/[*\$\_\#\=\@]/)===-1){
-            message.push("Failure Password must contain at least one letter from *$_#=@.");
+            message.push("Failure Password must contain at least one letter from *$_#=@ .");
             continue;
         }
         if(pass[i].search(/[%\!\)\(]/)!==-1){
-            message.push("Failure Password cannot contain %!)(.");
+            message.push("Failure Password cannot contain %!)( .");
             continue;
         }
         message.push("Success.");
