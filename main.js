@@ -11,7 +11,6 @@ function myFunction() {
 
         if(pass[i].length<6||pass[i].length>12){
             message.push("Failure Password must be at least 6 characters long.");
-            console.log("length");
             continue;
         }
         if(pass[i].search(/[0-9]/)===-1){
